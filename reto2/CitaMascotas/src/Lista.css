@@ -1,0 +1,37 @@
+h2{
+    text-align: center;
+}
+.cita-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.cita-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(0, 0, 255, 0.5);
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s;
+  }
+  
+  .cita-card:hover {
+    background: rgba(0, 0, 255, 0.2);
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.7);
+  }
+  @media (max-width: 768px) {
+    .cita-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cita-card {
+      width: 100%;
+    }
+  }
